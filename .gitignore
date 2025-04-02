@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.mypy_cache/
+
+# Distribution / packaging
+dist/
+build/
+eggs/
+*.egg-info/
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Poetry
+poetry.lock
+
+# Misc
+.DS_Store
+*.log

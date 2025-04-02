@@ -2,12 +2,32 @@
 name = "nebula"
 version = "0.1.0"
 description = ""
-authors = ["= <=>"]
+authors = ["Kolawole <pro.kaiserlauter@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 
+[tool.poetry.group.dev.dependencies]
+black = "^24.1.1"
+flake8 = "^7.0.0"
+
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+)/
+'''
 
 [build-system]
 requires = ["poetry-core"]
