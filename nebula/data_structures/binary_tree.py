@@ -15,13 +15,13 @@ class Comparable:
         return NotImplemented
 
     def __le__(self, other):
-        return self < other or self == other
+        return NotImplemented
 
     def __ge__(self, other):
-        return self > other or self == other
+        return NotImplemented
 
     def __ne__(self, other):
-        return not self == other
+        return NotImplemented
 
 
 class TreeNode(Generic[T]):
